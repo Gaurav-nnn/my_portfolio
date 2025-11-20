@@ -3,58 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Topic  </title>
-    <style>
-        section{
-            height: 200px;
-            background-color: brown;
-            margin: 25px;
-        }
-
-        #section1{
-            background-color: aqua;
-            height: 200px;
-        }
-        #section2{
-            background-color: antiquewhite;
-        }
-        header{
-            background-color: blueviolet;
-            padding: 50px;
-        }
-
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
-        <h1 style="text-align: center;">Group 1</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#"> About</a>
-                <a href="#">Contact </a>
-                <a href="#">helloo </a>
-            </nav>
-    </header>
-    <section id="section1">
-        <h2>This is for Banner</h2>
-    </section>
-    <main>
-        <aside style = "background-color: blueviolet; float: left; width: 200px;">
+        <h1>My Portfolio</h1>
+        <nav>
             <ul>
-                <li>Link-1</li>
-                <li>Link-2</li>
-                <li>Link-3</li>
-                <li>Link-4</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </aside>
-        <section id="section2">
-            <h2>This is for section</h2>
-              
-        </section>
-        <section>This is for last section</section>
-    </main>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate learner exploring web development. This is my first portfolio created using HTML and CSS. I love building clean, simple, and functional designs.</p>
+        <img src="images/mrBean.jpg" alt="My Photo" class="profile-pic">
+    </section>
+
+  
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>This is my first project.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>This is my second project.</p>
+        </div>
+
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea placeholder="Enter a message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
     <footer>
-        Copy All rights reserved 
+        <p> 2025 My Portfolio. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
