@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Gaurav | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>My Portfolio</h1>
+        <div class="logo">Gaurav</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,33 +21,67 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate learner exploring web development. This is my first portfolio created using HTML and CSS. I love building clean, simple, and functional designs.</p>
-        <img src="mrBean.jpg" alt="My Photo" class="profile-pic">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hello, I'm <span>Gaurav</span></h1>
+        <p>A beginner web developer learning HTML, CSS, and JavaScript.</p>
+        <a href="#projects" class="btn">View My Projects</a>
     </section>
 
-  
-    <section id="projects">
+    <!-- ABOUT -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-box">
+            <img src="my_img.png" alt="My Photo" class="profile-pic">
+            <p>
+                Hi! I’m Gaurav, currently learning web development.  
+                I enjoy creating clean, simple, and modern websites.  
+                This portfolio showcases my early projects and progress as a learner.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
         <h2>Projects</h2>
 
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>This is my first project.</p>
-        </div>
+        <div class="projects-grid">
 
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>This is my second project.</p>
-        </div>
+            <!-- WEATHER APP PROJECT -->
+            <div class="project-card">
+                <img src="weatherApp.png" alt="Weather App Screenshot" class="project-img">
 
+                <h3>Weather App</h3>
+                <p>
+                    This project is a responsive weather application that fetches real-time weather data 
+                    for any city in the world. It uses an external weather API to display live information 
+                    such as temperature, humidity, wind speed, and weather conditions. 
+                    The clean UI allows users to simply enter a city name and instantly view accurate global weather.
+                </p>
+            </div>
+
+            <!-- UNITY CAR SIMULATION PROJECT -->
+            <div class="project-card">
+                <img src="carSimulation.png" alt="Unity Game Screenshot" class="project-img">
+
+                <h3>Car Simulation Game (Unity)</h3>
+                <p>
+                    This is a 3D car-simulation game built in Unity where the player navigates a car through 
+                    a virtual city and collects coins before the timer runs out. It includes a smooth driving 
+                    system, countdown timer, collision detection, coin collection mechanics, and a fully 
+                    designed city environment. This project helped me learn Unity physics, C# scripting, 
+                    UI timers, and game environment design.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="container">
         <h2>Contact Me</h2>
 
-        <form action="#" method="post">
+        <form action="#">
             <label>Name</label>
             <input type="text" placeholder="Enter your name" required>
 
@@ -59,9 +95,9 @@
         </form>
     </section>
 
-    
+    <!-- FOOTER -->
     <footer>
-        <p> 2025 My Portfolio. All rights reserved.</p>
+        <p>© 2025 Gaurav | All Rights Reserved</p>
     </footer>
 
 </body>
